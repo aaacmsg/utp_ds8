@@ -1,8 +1,9 @@
 # Control de dispositivos IoT
+import random
 
-temperatura = int(input("Ingresa la temperatura: "))
-humedad = int(input("Ingresa la humedad: "))
-es_noche_hora = int(input("Ingresa la hora del dia (0-23): "))
+temperatura = random.randint(15, 35)
+humedad = random.randint(30, 70)
+es_noche_hora = random.randint(0, 23)
 
 if temperatura > 28:
     print("Activando ventilador...")
